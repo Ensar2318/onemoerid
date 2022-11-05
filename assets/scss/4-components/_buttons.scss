@@ -1,0 +1,82 @@
+.btn-primary-v2 {
+    background-color: var(--color-primary);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: var(--color-primary);
+    font-size: 18px;
+    padding: 20px 40px;
+    display: inline-block;
+    transition: 0.5s;
+    color: white;
+    &:hover {
+        background: none;
+        color: #04344c;
+        border-color: #04344c;
+    }
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: var(--color-primary);
+    font-size: 18px;
+    padding: 20px 40px;
+    display: inline-block;
+    transition: 0.5s;
+    color: white;
+    &:hover {
+        color: white;
+        background: none;
+        border-color: white;
+    }
+}
+
+.btn-secondary {
+    background: none;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #04344c;
+    color: #04344c;
+    font-size: 18px;
+    padding: 20px 40px;
+    display: inline-block;
+    transition: 0.5s;
+    &:hover {
+        color: white;
+        background: #04344c;
+        border-color: #04344c;
+    }
+}
+.btn-secondaryToPrimary {
+    background: none;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #04344c;
+    color: #04344c;
+    font-size: 18px;
+    padding: 20px 40px;
+    display: inline-block;
+    transition: 0.5s;
+    &:hover {
+        color: white;
+        background: var(--color-primary);
+        border-color: var(--color-primary);
+    }
+}
+.btn-white {
+    background: none;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: white;
+    color: white;
+    font-size: 18px;
+    padding: 20px 40px;
+    display: inline-block;
+    transition: 0.5s;
+    &:hover {
+        color: #04344c;
+        background: white;
+        border-color: white;
+    }
+}

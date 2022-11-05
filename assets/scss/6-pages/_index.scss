@@ -1,0 +1,263 @@
+.hero-section {
+    height: 100%;
+    background-attachment: fixed;
+    display: flex;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.middle {
+        height: 500px;
+        .blog-title {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 600;
+            text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.22);
+            padding-bottom: 25px;
+        }
+        .blog-desc {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    &.mini {
+        height: 400px;
+        background-position: center;
+        @include media-down("lg") {
+            height: 350px;
+        }
+        @include media-down("sm") {
+            height: 450px;
+        }
+
+        .container {
+            z-index: 1;
+            text-align: center;
+        }
+
+        .title {
+            color: #ffffff;
+            font-size: 72px;
+            font-weight: 400;
+            line-height: 76px;
+            text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.22);
+            padding-top: 40px;
+            @include media-down("lg") {
+                font-size: 30px;
+                line-height: 52px;
+            }
+        }
+        .subtitle {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 76px;
+            text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.22);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: center;
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+    .background-overlay {
+        background-color: transparent;
+        background-image: linear-gradient(180deg, rgba(29, 28, 28, 0) 0%, #000000 100%);
+        opacity: 0.72;
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .hero-content {
+        color: white;
+        position: relative;
+        > .subtitle {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        > .title {
+            font-size: 92px;
+            font-weight: 700;
+            line-height: 86px;
+            text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.22);
+            margin-bottom: 30px;
+            @include media-down("md") {
+                font-size: 57px;
+                font-weight: 700;
+                line-height: 62px;
+                text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.22);
+                margin-bottom: 10px;
+            }
+        }
+        > .description {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 27px;
+        }
+    }
+    .flag-img {
+        display: block;
+        width: 25%;
+        opacity: 0;
+        transition: 0.5s ease;
+        display: none;
+        @include media-up("xl") {
+            display: block;
+        }
+    }
+    .flag-wrap {
+        justify-content: space-around;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 80%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 15;
+        a {
+            transition: 0.4s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        img {
+            width: 100%;
+            max-width: 250px;
+        }
+    }
+    .women-img {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 80%;
+        opacity: 0;
+        transition: 0.5s ease;
+        display: none;
+        object-fit: contain;
+        @include media-up("xl") {
+            display: block;
+        }
+    }
+}
+
+.page-loaded {
+    .flag-img {
+        opacity: 1;
+    }
+    .women-img {
+        opacity: 1;
+    }
+}
+
+.referencesSwiepr {
+    .swiper-slide {
+        .block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+        }
+    }
+}
+
+.portfy-card {
+    padding: 25px;
+    border: solid 1px;
+    border-color: #0201010f;
+    transition: 0.5s;
+    &:hover {
+        border-color: #dc1c2c;
+    }
+    .title {
+        color: #04344c;
+        font-family: "Poppins", Sans-serif;
+        font-size: 23px;
+        font-weight: 600;
+        padding: 20px 0;
+    }
+    .sub {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 400;
+        color: #1d1c1c;
+        padding-bottom: 10px;
+    }
+    img {
+        object-fit: cover;
+    }
+    .card-price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .btn-primary-v2 {
+            font-size: 16px;
+            padding: 15px 30px !important;
+        }
+        .price {
+            color: #04344c;
+            font-family: "Poppins", Sans-serif;
+            font-size: 21px;
+            font-weight: 600;
+        }
+    }
+}
+
+.blog-card {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: end;
+
+    &:hover {
+        &::after {
+            opacity: 0;
+        }
+    }
+    .content {
+        position: relative;
+        z-index: 2;
+        padding: 20px;
+        text-align: start;
+        .badge {
+            margin-bottom: 10px;
+            background-color: var(--color-primary);
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: none;
+            padding: 2px 10px 2px 10px;
+            border-radius: 0px 0px 0px 0px;
+            display: inline-block;
+        }
+        p {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 30px;
+        }
+    }
+    &::after {
+        content: "";
+        transition: 0.5s;
+        position: absolute;
+        opacity: 100%;
+        background-color: transparent;
+        background-image: linear-gradient(180deg, #00000000 0%, #04344cd1 100%);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+    }
+}

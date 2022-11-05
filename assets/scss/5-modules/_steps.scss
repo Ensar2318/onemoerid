@@ -1,0 +1,42 @@
+.section-steps {
+    background-color: #f7f9fb;
+    @include media-up("md") {
+        padding: 120px 0;
+    }
+    .steps-wrap {
+        position: relative;
+        .number {
+            font-size: 60px;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 15px;
+        }
+        .title {
+            font-size: 31px;
+            font-weight: 400;
+            color: var(--color-secondary);
+            margin-bottom: 15px;
+        }
+        .description {
+            color: var(--color-body);
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 27px;
+        }
+
+        .big-number {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            pointer-events: none;
+            font-size: 300px;
+            font-weight: 600;
+            opacity: 0.02;
+            line-height: 1;
+            @include media-down("lg") {
+                display: none;
+            }
+        }
+    }
+}

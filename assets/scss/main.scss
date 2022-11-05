@@ -1,0 +1,48 @@
+// Base
+@import "1-base/reset";
+@import "1-base/variables";
+@import "1-base/responsive";
+@import "1-base/settings";
+@import "1-base/typography";
+@import "1-base/helpers";
+@import "1-base/media-holder";
+
+// Mixins
+@import "2-mixins/linksEffect";
+@import "2-mixins/global";
+
+// Layout
+@import "3-layout/global";
+@import "3-layout/header";
+@import "3-layout/footer";
+@import "3-layout/bottom-menu";
+@import "3-layout/mobile-menu";
+
+// Components
+@import "4-components/buttons";
+@import "4-components/section-heading";
+@import "4-components/why-us-card";
+
+// Modules
+@import "5-modules/page-title";
+@import "5-modules/animated-cursor";
+@import "5-modules/user-modals";
+@import "5-modules/layered-carousel";
+@import "5-modules/steps";
+@import "5-modules/accordion-list";
+@import "5-modules/cta";
+@import "5-modules/contact-form";
+@import "5-modules/karsilastirma";
+@import "5-modules/calculate-price";
+
+// Pages
+@import "6-pages/index";
+@import "6-pages/ulke-detay";
+@import "6-pages/blogs";
+@import "6-pages/experience-detail";
+// Performance
+@import "7-performance/performance";
+
+.morphext .animated {
+    display: inline-block;
+}

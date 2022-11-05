@@ -1,0 +1,31 @@
+@use "sass:math" as math;
+
+$ratios: (
+    "1by1": 100%,
+    "16by9": math.div(9, 16) * 100%,
+    "4by3": math.div(3, 4) * 100%,
+    "3by1": math.div(1, 3) * 100%,
+    "6by5": math.div(5, 6) * 100%,
+);
+
+.media-holder {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+
+    @each $ratio, $value in $ratios {
+        &.ratio-#{$ratio} {
+            padding-top: #{$value};
+        }
+    }
+
+    .media-holder-item {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,68 @@
+.experience-detail-wrap {
+    h1 {
+        max-width: 1000px;
+        font-size: 60px;
+        line-height: 1.2em !important;
+        font-weight: bold;
+        margin: 20px 0 35px;
+    }
+    h5 {
+        font-size: 16px;
+        display: inline-block;
+        font-weight: bold;
+        color: #01206f !important;
+        border-bottom: 1px solid transparent;
+        transition: 0.5s;
+        line-height: 1.2em;
+    }
+    .sub-title-desc {
+        padding-left: 55px;
+        position: relative;
+        margin-bottom: 50px;
+        p {
+            font-size: 24px;
+            line-height: 1.5em !important;
+            max-width: 800px;
+        }
+        &::before {
+            content: "«";
+            font-family: "montserrat";
+            font-size: 60px;
+            line-height: 1em;
+            font-weight: 700;
+            color: #01206f;
+            position: absolute;
+            left: 0;
+            top: -17px;
+        }
+        &::after {
+            content: "";
+            width: 1px;
+            height: calc(100% - 45px);
+            position: absolute;
+            left: 17px;
+            bottom: 0;
+            background: #01206f;
+        }
+    }
+    .title-img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .content {
+        padding-top: 40px;
+        p {
+            font-family: "Montserrat", sans-serif;
+            padding-bottom: 20px;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 400;
+            color: #7a7a7a;
+        }
+        h1 {
+            font-size: 40px;
+            padding-top: 60px;
+            padding-bottom: 20px;
+        }
+    }
+}

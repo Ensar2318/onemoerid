@@ -1,0 +1,171 @@
+// Colors
+@each $color, $code in $colors {
+    /* Text Colors */
+
+    .text-#{$color} {
+        color: #{$code} !important;
+    }
+
+    /* Background Colors */
+
+    .bg-#{$color} {
+        background-color: #{$code} !important;
+    }
+
+    /* Border Colors */
+
+    .border-#{$color} {
+        border-color: #{$code} !important;
+    }
+}
+
+// Text Alignments
+
+$alingments: ("left", "center", "right", "justify");
+
+@each $alignment in $alingments {
+    .text-#{$alignment} {
+        text-align: #{$alignment} !important;
+    }
+}
+
+@each $alignment in $alingments {
+    @each $breakpoint, $value in $breakpoints {
+        .text-#{$breakpoint}-#{$alignment} {
+            @include media-up($breakpoint) {
+                text-align: #{$alignment} !important;
+            }
+        }
+    }
+}
+
+/* Font Weights */
+$fontWeights: (300, 400, 500, 600, 700, 800);
+
+@each $fontWeight in $fontWeights {
+    .font-#{$fontWeight} {
+        font-weight: #{$fontWeight};
+    }
+}
+
+/* Font sizes */
+$fontSizes: (12, 14, 16, 18, 20, 22, 24, 30, 32, 42, 48, 50, 52, 54, 55, 60);
+@each $breakpoint in map-keys($breakpoints) {
+    @include media-up($breakpoint) {
+        @each $fontSizes in $fontSizes {
+            .fs-#{$breakpoint}-#{$fontSizes} {
+                font-size: #{$fontSizes}px;
+            }
+        }
+    }
+}
+
+/* Gaps sizes */
+$gapSizes: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55);
+
+@each $breakpoint in map-keys($breakpoints) {
+    @include media-up($breakpoint) {
+        @each $gapSize in $gapSizes {
+            .gap-#{$breakpoint}-#{$gapSize} {
+                gap: #{$gapSize}px;
+            }
+        }
+    }
+}
+
+/* Borders */
+$positions: ("top", "right", "bottom", "left");
+
+@each $position in $positions {
+    .border-#{$position} {
+        border-#{$position}: 1px solid var(--color-gray);
+    }
+}
+
+// Border Radius
+
+@for $i from 1 through 5 {
+    .border-radius-#{$i} {
+        border-radius: #{$i}rem !important;
+    }
+}
+
+// Width and Height and padding margin global
+
+$sizes: (
+    "10",
+    "15",
+    "20",
+    "25",
+    "30",
+    "35",
+    "40",
+    "45",
+    "50",
+    "55",
+    "60",
+    "65",
+    "70",
+    "75",
+    "80",
+    "85",
+    "90",
+    "95",
+    "100"
+);
+
+@each $size in $sizes {
+    .w-#{$size} {
+        width: #{$size}#{"%"} !important;
+    }
+    .h-#{$size} {
+        height: #{$size}#{"%"} !important;
+    }
+}
+
+// Margins and paddigns
+
+@each $breakpoint in map-keys($breakpoints) {
+    @include media-up($breakpoint) {
+        @each $size in $sizes {
+            .m-#{$breakpoint}-#{$size} {
+                margin: #{$size}#{"px"};
+            }
+            .p-#{$breakpoint}-#{$size} {
+                padding: #{$size}#{"px"};
+            }
+            .mt-#{$breakpoint}-#{$size} {
+                margin-top: #{$size}#{"px"};
+            }
+            .mb-#{$breakpoint}-#{$size} {
+                margin-bottom: #{$size}#{"px"};
+            }
+            .ml-#{$breakpoint}-#{$size} {
+                margin-left: #{$size}#{"px"};
+            }
+            .mr-#{$breakpoint}-#{$size} {
+                margin-right: #{$size}#{"px"};
+            }
+
+            .pt-#{$breakpoint}-#{$size} {
+                padding-top: #{$size}#{"px"};
+            }
+            .pb-#{$breakpoint}-#{$size} {
+                padding-bottom: #{$size}#{"px"};
+            }
+            .pl-#{$breakpoint}-#{$size} {
+                padding-left: #{$size}#{"px"};
+            }
+            .pr-#{$breakpoint}-#{$size} {
+                padding-right: #{$size}#{"px"};
+            }
+        }
+    }
+}
+
+.position-relative {
+    position: relative;
+}
+.bg-primary-gradient {
+    background: linear-gradient(to bottom, #3c272b, #7c6e71);
+}
