@@ -13,6 +13,12 @@
         color: #04344c;
         border-color: #04344c;
     }
+    &.sm {
+        padding: 6px 20px;
+    }
+    &.fs-sm {
+        font-size: 14px;
+    }
 }
 
 .btn-primary {
@@ -29,6 +35,9 @@
         color: white;
         background: none;
         border-color: white;
+    }
+    &.sm {
+        padding: 10px 20px;
     }
 }
 

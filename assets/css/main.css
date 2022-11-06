@@ -5541,6 +5541,12 @@ footer .footer-follow img {
   color: #04344c;
   border-color: #04344c;
 }
+.btn-primary-v2.sm {
+  padding: 6px 20px;
+}
+.btn-primary-v2.fs-sm {
+  font-size: 14px;
+}
 
 .btn-primary {
   background-color: var(--color-primary);
@@ -5557,6 +5563,9 @@ footer .footer-follow img {
   color: white;
   background: none;
   border-color: white;
+}
+.btn-primary.sm {
+  padding: 10px 20px;
 }
 
 .btn-secondary {
@@ -6231,7 +6240,7 @@ footer .footer-follow img {
   font-size: 20px;
 }
 .hero-section .background-overlay {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.3607843137);
   background-image: linear-gradient(180deg, rgba(29, 28, 28, 0) 0%, #000000 100%);
   opacity: 0.72;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
@@ -6771,6 +6780,328 @@ footer .footer-follow img {
   font-size: 40px;
   padding-top: 60px;
   padding-bottom: 20px;
+}
+
+.real-estate-card {
+  border-radius: 10px;
+  display: block;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 25px 0px;
+}
+.real-estate-card .header {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+.real-estate-card .header img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+.real-estate-card .header img:hover {
+  transform: scale(1.1);
+}
+.real-estate-card .header .featured {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 10px;
+  padding: 4px 7px 3px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  line-height: 11px;
+  font-weight: 700;
+  height: 18px;
+  background-color: var(--color-primary);
+}
+.real-estate-card .content {
+  padding: 15px 12px;
+}
+.real-estate-card .content > * {
+  padding: 10px 0;
+}
+.real-estate-card .content .price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.real-estate-card .content .price b {
+  font-size: 18px;
+}
+.real-estate-card .content .tags {
+  color: #7a7a7a;
+  font-size: 14px;
+  line-height: 20px;
+}
+.real-estate-card .content .name {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(59, 66, 73);
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  line-height: 26px;
+}
+.real-estate-card .content .category {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  font-size: 14px;
+}
+.real-estate-card .content .author-star {
+  color: #7a7a7a;
+  font-size: 14px;
+}
+.real-estate-card .content .client-contact {
+  display: flex;
+  gap: 10px;
+}
+.real-estate-card .content .client-contact a {
+  padding: 5px 18px;
+  border-radius: 3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 14px;
+}
+.real-estate-card .content .client-contact a.primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+.real-estate-card .content .client-contact a.secondary {
+  color: var(--color-secondary);
+  border: solid 1px var(--color-secondary);
+}
+
+.settings {
+  box-shadow: 0px 10px 25px 0 rgba(0, 0, 0, 0.2) !important;
+  padding: 25px 10px;
+}
+.settings .searh-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #ebebeb;
+  background-color: #f8f8f8;
+  color: #969696;
+}
+.settings .searh-wrap i {
+  font-size: 20px;
+  padding-left: 10px;
+}
+.settings #dirsearch {
+  -webkit-appearance: none;
+  padding: 10px 6px;
+  outline: none;
+  color: #777;
+  margin: 0;
+  width: 100%;
+  display: block;
+  background: #f8f8f8;
+  border-radius: 0px;
+}
+.settings .filter-wrap {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 60px;
+}
+.settings .filter-wrap > li {
+  margin-top: 20px;
+}
+.settings .filter-wrap > li .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px #ebebeb;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+.settings .filter-wrap > li .head i {
+  transition: 0.5s;
+}
+.settings .filter-wrap > li .head.active i {
+  rotate: 180deg;
+}
+.settings .filter-wrap > li .content {
+  display: none;
+}
+.settings .filter-wrap > li .content .filter-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+.settings .filter-wrap > li .content .filter-items label {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.settings .filter-wrap > li .content .filter-items label span {
+  font-size: 14px;
+}
+
+.swiper-real-estate {
+  height: 700px;
+}
+.swiper-real-estate .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding-bottom: 20px;
+}
+.swiper-real-estate .swiper-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  opacity: 1;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+.swiper-real-estate .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  scale: 1.4;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.swiper-real-estate img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.real-estate-detail-content {
+  background-color: white;
+  color: #364249;
+}
+.real-estate-detail-content .head {
+  padding: 50px;
+}
+.real-estate-detail-content .head .name {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(59, 66, 73);
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.real-estate-detail-content .head .addres {
+  font-size: 14px;
+  color: #7a7a7a;
+  margin-bottom: 10px;
+}
+.real-estate-detail-content .head .stars {
+  font-size: 14px;
+}
+.real-estate-detail-content .types-wrap .col-lg-3:first-child .type-card,
+.real-estate-detail-content .types-wrap .col-lg-3:last-child .type-card {
+  border-left: none;
+  border-right: none;
+}
+.real-estate-detail-content .types-wrap .col-lg-3:nth-child(3) .type-card {
+  border-left: none;
+}
+.real-estate-detail-content .types-wrap .type-card {
+  text-align: center;
+  padding: 30px 10px;
+  border: solid 1px #dfdfdf;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 200px;
+}
+.real-estate-detail-content .types-wrap .type-card i {
+  color: #dcdfe5;
+  font-size: 40px;
+}
+.real-estate-detail-content .types-wrap .type-card .type {
+  color: #c4c4c4;
+  font-size: 16px;
+}
+.real-estate-detail-content .types-wrap .type-card .name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #3b4249;
+}
+.real-estate-detail-content .about {
+  padding: 50px;
+}
+.real-estate-detail-content .about .title {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.real-estate-detail-content .about .desc {
+  font-size: 14px;
+  line-height: 22px;
+  color: #7a7a7a;
+  padding-bottom: 60px;
+}
+.real-estate-detail-content .about .subtitle {
+  font-size: 16px;
+  padding-bottom: 30px;
+  border-bottom: dotted 1px #dfdfdf;
+  font-weight: 600;
+}
+.real-estate-detail-content .about .list-details {
+  padding-bottom: 60px;
+}
+.real-estate-detail-content .about .list-details .item {
+  list-style: none;
+  padding-top: 20px;
+}
+.real-estate-detail-content .about .list-details .item li {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.real-estate-detail-content .about .list-details .item li::before {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-weight: 900;
+  padding-right: 6px;
+}
+.real-estate-detail-content .images-wrap {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.real-estate-detail-content .images-wrap .img-block {
+  height: 250px;
+  flex-grow: 1;
+  flex-basis: 32%;
+  overflow: hidden;
+}
+.real-estate-detail-content .images-wrap .img-block:hover img {
+  scale: 1.4;
+}
+@media (max-width: 991px) {
+  .real-estate-detail-content .images-wrap .img-block {
+    flex-basis: 48%;
+  }
+}
+.real-estate-detail-content .images-wrap .img-block img {
+  transition: 0.5s;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .morphext .animated {
