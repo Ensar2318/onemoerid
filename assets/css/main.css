@@ -6060,6 +6060,13 @@ footer .footer-follow img {
   padding: 15px;
   background-color: rgba(240, 240, 240, 0.5411764706);
 }
+.karsilastirma-table th:first-child {
+  background-color: rgb(240, 240, 240);
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 4;
+}
 .karsilastirma-table td {
   text-align: left;
   color: #666666;
@@ -6068,6 +6075,13 @@ footer .footer-follow img {
   border-color: #eeeeee;
   padding: 18px 0px 18px 15px;
   line-height: 24px;
+}
+.karsilastirma-table td:first-child {
+  background-color: rgb(240, 240, 240);
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 4;
 }
 .karsilastirma-table tr,
 .karsilastirma-table th {
@@ -6266,11 +6280,12 @@ footer .footer-follow img {
   text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.22);
   margin-bottom: 30px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .hero-section .hero-content > .title {
-    font-size: 57px;
+    padding-top: 20px;
+    font-size: 30px;
     font-weight: 700;
-    line-height: 62px;
+    line-height: 30px;
     text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.22);
     margin-bottom: 10px;
   }

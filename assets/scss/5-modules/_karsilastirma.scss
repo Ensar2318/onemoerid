@@ -11,6 +11,12 @@
         border-color: #eeeeee;
         padding: 15px;
         background-color: #f0f0f08a;
+        &:first-child {
+            background-color: rgba(240, 240, 240, 1);
+            position: sticky;
+            left: 0;
+            z-index: 4;
+        }
     }
     td {
         text-align: left;
@@ -20,6 +26,12 @@
         border-color: #eeeeee;
         padding: 18px 0px 18px 15px;
         line-height: 24px;
+        &:first-child {
+            background-color: rgba(240, 240, 240, 1);
+            position: sticky;
+            left: 0;
+            z-index: 4;
+        }
     }
     tr,
     th {
