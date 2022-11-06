@@ -7017,13 +7017,15 @@ footer .footer-follow img {
 .real-estate-detail-content .head .stars {
   font-size: 14px;
 }
-.real-estate-detail-content .types-wrap .col-lg-3:first-child .type-card,
+@media (min-width: 992px) {
+  .real-estate-detail-content .types-wrap .col-lg-3:first-child .type-card,
 .real-estate-detail-content .types-wrap .col-lg-3:last-child .type-card {
-  border-left: none;
-  border-right: none;
-}
-.real-estate-detail-content .types-wrap .col-lg-3:nth-child(3) .type-card {
-  border-left: none;
+    border-left: none;
+    border-right: none;
+  }
+  .real-estate-detail-content .types-wrap .col-lg-3:nth-child(3) .type-card {
+    border-left: none;
+  }
 }
 .real-estate-detail-content .types-wrap .type-card {
   text-align: center;
