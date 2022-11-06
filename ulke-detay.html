@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/vendor/swipperjs/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/vendor/icomoon/style.css">
     <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/vendor/niceSelect/nice-select.css">
     <!-- Main Css Files -->
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -427,16 +428,48 @@
                     Visa edinerek ilk 5 yıl Golden Visa programının kapsamlı avantajlarından yararlanabilir, 5. yılın
                     sonunda ise vatandaşlığa geçiş yapabilirsiniz.</p>
             </div>
+            <style>
+                .nice-select {
+                    width: 200px;
+                }
 
+                .nice-select .list {
+                    width: 200px;
+                }
+            </style>
             <div style="overflow: auto;">
                 <table class="karsilastirma-table mt-xs-60">
                     <thead>
                         <tr>
                             <th>Program</th>
-                            <th> Portekiz</th>
-                            <th> İspanya</th>
-                            <th> Yunanistan</th>
-                            <th> Malta</th>
+                            <th> <select class="nice-select" required>
+                                    <option value="">Program Seç</option>
+                                    <option value="Portekiz">Portekiz</option>
+                                    <option value="İspanya">İspanya</option>
+                                    <option value="Yunanistan">Yunanistan</option>
+                                    <option value="Malta">Malta</option>
+                                </select></th>
+                            <th> <select class="nice-select" required>
+                                    <option value="">Program Seç</option>
+                                    <option value="Portekiz">Portekiz</option>
+                                    <option value="İspanya">İspanya</option>
+                                    <option value="Yunanistan">Yunanistan</option>
+                                    <option value="Malta">Malta</option>
+                                </select></th>
+                            <th> <select class="nice-select" required>
+                                    <option value="">Program Seç</option>
+                                    <option value="Portekiz">Portekiz</option>
+                                    <option value="İspanya">İspanya</option>
+                                    <option value="Yunanistan">Yunanistan</option>
+                                    <option value="Malta">Malta</option>
+                                </select></th>
+                            <th> <select class="nice-select" required>
+                                    <option value="">Program Seç</option>
+                                    <option value="Portekiz">Portekiz</option>
+                                    <option value="İspanya">İspanya</option>
+                                    <option value="Yunanistan">Yunanistan</option>
+                                    <option value="Malta">Malta</option>
+                                </select></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -755,7 +788,12 @@
     <script src="assets/vendor/jquerry/jquery-3.6.0.min.js"></script>
     <script src="assets/vendor/swipperjs/swiper-bundle.min.js"></script>
     <script src="assets/vendor/waypoint/jquery.waypoints.js"></script>
-
+    <script src="assets/vendor/niceSelect/jquery.nice-select.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".nice-select").niceSelect();
+        });
+    </script>
     <!-- Main Js Source File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/globalSwiper.js"></script>
