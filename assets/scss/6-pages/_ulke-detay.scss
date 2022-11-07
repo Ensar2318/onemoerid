@@ -169,8 +169,11 @@
             .tabbar-step {
                 .step-item {
                     .number {
-                        background-color: var(--color-secondary) !important;
+                        background-color: var(--color-primary) !important;
                         color: white !important;
+                    }
+                    .icon {
+                        opacity: 1;
                     }
                 }
             }
@@ -217,11 +220,11 @@
                 min-width: 50px;
                 min-height: 50px;
                 border-radius: 50%;
-                border: solid 1px var(--color-secondary);
+                border: solid 1px var(--color-primary);
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: var(--color-secondary);
+                color: var(--color-primary);
                 font-size: 20px;
                 font-weight: 600;
                 margin-right: 20px;
@@ -230,15 +233,19 @@
                 flex-grow: 1;
                 font-size: 21px;
                 font-weight: bold;
-                color: var(--color-secondary);
+                color: var(--color-primary);
                 position: relative;
                 padding-bottom: 40px;
                 padding-top: 40px;
-                border-bottom: solid 1px var(--color-secondary);
+                border-bottom: solid 1px var(--color-primary);
             }
             .icon {
+                opacity: 0;
                 font-size: 40px;
-                color: var(--color-secondary);
+                color: var(--color-primary);
+                @include media-down("lg") {
+                    rotate: 90deg;
+                }
             }
         }
     }

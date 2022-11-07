@@ -29,8 +29,14 @@ $(document).ready(function () {
 
     $("#tabbarmain .tabbar-main-item .tabbar-step").click(function (e) {
         e.preventDefault();
-        $("#tabbarmain .tabbar-main-item").removeClass("active");
-        $(this).parent().addClass("active");
+        if ($(this).parent().hasClass("active")) {
+            $(this).parent().removeClass("active");
+
+        } else {
+            $("#tabbarmain .tabbar-main-item").removeClass("active");
+            $(this).parent().addClass("active");
+
+        }
 
     });
 
