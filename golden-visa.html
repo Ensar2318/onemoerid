@@ -313,121 +313,145 @@
     <!-- Faq side -->
 
     <!-- calculate price modal -->
+    <!-- calculate price modal -->
     <section class="pt-0">
         <div class="container">
-            <div class="row gy-4">
-                <div class="col-lg-6  d-lg-block d-none">
-                    <img src="assets/img/left-right-form.jpg" alt="">
-                </div>
+            <div class="row gy-5 justify-content-center">
                 <div class="col-lg-6">
                     <form action="">
-                        <div class="calculate-price" id="price-sort-1">
-                            <div class="subtitle">
-                                Formu Doldur Fiyat Teklifi Al
+                        <div class="calculate-v2-card">
+                            <div class="pb-4 title">Calculate the cost
                             </div>
-                            <div class="title">Ücret Hesaplayıcı
+                            <div class="row mb-4">
+                                <div class="col-lg-4">
+                                    <label class="pb-3 d-block" for="">Spouse</label>
+                                    <div class="d-flex">
+                                        <div class="custom-r-wrap">
+                                            <input name="input_6" type="radio" value="true" id="choice1">
+                                            <label class="radio-custom" for="choice1" id="">Yes</label>
+                                        </div>
+                                        <div class="custom-r-wrap">
+                                            <input name="input_6" type="radio" value="true" id="choice2">
+                                            <label class="radio-custom" for="choice2" id="">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 offset-3">
+                                    <label class="pb-3 d-block" for="">Children</label>
+                                    <div class="d-flex">
+                                        <div class="custom-r-wrap">
+                                            <input name="input_4" type="radio" value="true" id="choice3">
+                                            <label class="radio-custom" for="choice3" id="">Yes</label>
+                                        </div>
+                                        <div class="custom-r-wrap">
+                                            <input name="input_4" type="radio" value="false" id="choice4">
+                                            <label class="radio-custom" for="choice4" id="">No</label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="road pb-xs-20">
-                                <span class="number">1</span>
-                                <span class="line"></span>
-                                <span class="number off">2</span>
+                            <div style="display: none;" class="row" id="isChildren">
+                                <div class="col-lg-4">
+                                    <label class="pb-3 d-block">Children up to 12 years</label>
+                                    <select class="custom-select">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4">
+                                    <label class="pb-3 d-block">Children 12-17 years
+                                    </label>
+                                    <select class="custom-select">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4">
+                                    <label class="pb-3 d-block">Children 18-29 years
+                                    </label>
+                                    <select class="custom-select">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="form-control">
-                                <label>Ülke Seçiniz
-                                </label>
-                                <select>
-                                    <option value="">Türkiye</option>
-                                    <option value="">Almanya</option>
-                                    <option value="">İngiltere</option>
-                                    <option value="">İspanya</option>
-                                    <option value="">Portekiz</option>
+                            <div class="row mb-4">
+                                <div class="col-lg-4">
+                                    <label class="pb-3 d-block" for="">Parents over 55</label>
+                                    <div class="d-flex">
+                                        <div class="custom-r-wrap">
+                                            <input name="input_7" type="radio" value="true" id="choice12">
+                                            <label class="radio-custom" for="choice12" id="">Yes</label>
+                                        </div>
+                                        <div class="custom-r-wrap">
+                                            <input name="input_7" type="radio" value="false" id="choice13">
+                                            <label class="radio-custom" for="choice13" id="">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col offset-3" id="single-select" style="display: none;">
+                                    <label class="pb-3 d-block">Children up to 12 years</label>
+                                    <select class="custom-select w-100">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-cv2 mb-3">
+                                <label class="pb-3 d-block" for="">Name</label>
+                                <input class="cs-vs-2" type="text" value="">
+                            </div>
+
+                            <div class="form-cv2 mb-3">
+                                <label class="pb-3 d-block" for="">Email</label>
+                                <input class="cs-vs-2" type="text" value="">
+                            </div>
+                            <div class="form-cv2 mb-3">
+                                <label class="pb-3 d-block" for="">Phone</label>
+                                <input class="cs-vs-2" type="text" value="">
+                            </div>
+                            <div>
+                                <input type="checkbox" id="showselect">
+                                <label for="showselect">I acknowledge that this program requires a minimum investment of
+                                    €690,000</label>
+                            </div>
+                            <div id="showselect2" class="pt-4" style="display: none;">
+                                <label class="pb-3 d-block">What are your goals to obtain Malta in citizenship
+                                    by
+                                    investment?</label>
+                                <select class="custom-select w-100">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
                                 </select>
                             </div>
-                            <div class="row mt-4">
-                                <div class="col-lg-6">
-                                    <div class="form-control">
-                                        <label>Yatırım Türü Seçiniz</label>
-                                        <select>
-                                            <option value="">Gayrimenkul</option>
-                                            <option value="">Fon</option>
-                                            <option value="">Diğer</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-control">
-                                        <label>Medeni Durum</label>
-                                        <select>
-                                            <option value="">Evli</option>
-                                            <option value="">Bekar</option>
-                                        </select>
-                                    </div>
-                                </div>
+                            <div class="pt-4">
+                                <input type="checkbox" id="showselect">
+                                <label for="showselect">I agree with terms and conditions of the Immigrant Invest
+                                    privacy policy. Learn more about how we process personal data here.</label>
                             </div>
 
-                            <button type="button"
-                                onclick="{document.querySelector('#price-sort-1').classList.add('d-none'),document.querySelector('#price-sort-2').classList.remove('d-none')}"
-                                class="mt-2">Sonraki</button>
+                            <button class="mt-4 btn-primary-v2 w-100">Get a quote on email</button>
                         </div>
-                        <div class="calculate-price d-none" id="price-sort-2">
-                            <div class="subtitle">
-                                Formu Doldur Fiyat Teklifi Al
-                            </div>
-                            <div class="title">Ücret Hesaplayıcı
-                            </div>
-                            <div class="road pb-xs-20">
-                                <span class="number active">1</span>
-                                <span class="line"></span>
-                                <span class="number">2</span>
-                            </div>
-                            <div class="row mt-4">
-                                <div class="col-lg-6">
-                                    <div class="form-control">
-                                        <label>Çocuğunuz Var Mı?</label>
-                                        <select>
-                                            <option value="">Yok</option>
-                                            <option value="">1 Çocugum Var</option>
-                                            <option value="">2 Çocugum Var</option>
-                                            <option value="">3 Çocugum Var</option>
-                                            <option value="">4 Çocugum Var</option>
-                                            <option value="">4+ Çocugum Var</option>
-                                        </select>
-                                    </div>
 
-                                    <div class="form-control">
-                                        <label for="">Adınız</label>
-                                        <input type="text" placeholder="Adınız">
-                                    </div>
-                                    <button type="button"
-                                        onclick="{document.querySelector('#price-sort-1').classList.remove('d-none'),document.querySelector('#price-sort-2').classList.add('d-none')}"
-                                        class="mt-2">Önceki</button>
-
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-control">
-                                        <label>+65 Ebeveyn Var mı?</label>
-                                        <select>
-                                            <option value="">Yok</option>
-                                            <option value="">1</option>
-                                            <option value="">2</option>
-                                            <option value="">3</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-control">
-                                        <label for="">Telefon Numaranız</label>
-                                        <input type="text" placeholder="Telefon Numaranız">
-                                    </div>
-                                    <button type="submit" class="mt-2">Fiyat Teklifi
-                                        Al</button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </form>
                 </div>
+
             </div>
+            </form>
+        </div>
+        </div>
         </div>
     </section>
+    <!-- calculate price modal -->
     <!-- calculate price modal -->
 
     <section class="cta-section">

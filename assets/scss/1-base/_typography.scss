@@ -10,7 +10,19 @@
 // 900	Black (Heavy)
 // 950	Extra Black (Ultra Black)
 
+@font-face {
+    font-family: "muller";
+    src: url(../fonts/MullerBold.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "muller";
+    src: url(../fonts/MullerRegular.woff2);
+    font-weight: 400;
+}
+
 html,
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "muller", sans-serif;
 }

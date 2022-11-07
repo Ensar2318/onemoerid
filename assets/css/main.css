@@ -64,9 +64,19 @@ table {
   --color-ghost: #7a7a7a;
 }
 
+@font-face {
+  font-family: "muller";
+  src: url(../fonts/MullerBold.woff2);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "muller";
+  src: url(../fonts/MullerRegular.woff2);
+  font-weight: 400;
+}
 html,
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "muller", sans-serif;
 }
 
 /* Text Colors */
@@ -5228,7 +5238,7 @@ body {
 }
 
 section {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 @media (max-width: 991px) {
   section {
@@ -6854,6 +6864,70 @@ footer .footer-follow img {
   margin-top: 20px;
   font-style: italic;
   font-size: 14px;
+}
+
+.calculate-v2-card {
+  padding: 70px 70px 70px 70px;
+  background: #f2f6f9;
+  position: relative;
+}
+.calculate-v2-card .title {
+  font-family: muller, arial;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+.calculate-v2-card .custom-r-wrap input {
+  display: none;
+}
+.calculate-v2-card .custom-r-wrap input:checked + .radio-custom {
+  background-color: var(--color-primary);
+  color: white;
+}
+.calculate-v2-card .radio-custom {
+  cursor: pointer;
+  min-height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+  width: 125px;
+  max-width: 100%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  font-weight: normal !important;
+  transition: 0.5s;
+}
+.calculate-v2-card .radio-custom:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+.calculate-v2-card .custom-select {
+  cursor: pointer;
+  min-height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+  max-width: 100%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  font-weight: normal !important;
+  width: 100%;
+  font-size: 20px;
+}
+.calculate-v2-card .cs-vs-2 {
+  min-height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 100%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  font-weight: normal !important;
+  width: 100%;
+  font-size: 20px;
 }
 
 .blog-buttons {
