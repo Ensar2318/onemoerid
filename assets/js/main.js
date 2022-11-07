@@ -26,7 +26,18 @@ $(document).ready(function () {
         $(this).parent().toggleClass('active');
         $(this).next().slideToggle(300)
     })
+
+    $("#tabbarmain .tabbar-main-item .tabbar-step").click(function (e) {
+        e.preventDefault();
+        $("#tabbarmain .tabbar-main-item").removeClass("active");
+        $(this).parent().addClass("active");
+
+    });
+
 });
+
+
+
 
 //#####Swiper Örneği######
 

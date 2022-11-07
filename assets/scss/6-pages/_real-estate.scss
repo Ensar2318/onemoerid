@@ -221,6 +221,7 @@
     }
     .types-wrap {
         @include media-up("lg") {
+            display: block;
             .col-lg-3:first-child .type-card,
             .col-lg-3:last-child .type-card {
                 border-left: none;
@@ -230,6 +231,7 @@
                 border-left: none;
             }
         }
+
         .type-card {
             text-align: center;
             padding: 30px 10px;

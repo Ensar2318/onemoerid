@@ -7,6 +7,24 @@
     left: 0;
     width: 100%;
     z-index: 999;
+    &.static-style {
+        position: static;
+        background-color: white;
+        .main-menu {
+            ul {
+                li {
+                    a {
+                        color: #999999;
+                    }
+                }
+            }
+        }
+        .contact-info {
+            &__item {
+                color: #999999;
+            }
+        }
+    }
     > .container-fluid {
         display: flex;
         justify-content: space-between;
@@ -157,5 +175,23 @@
         .main-menu {
             display: none;
         }
+    }
+}
+
+.regred {
+    .subtitle {
+        color: var(--color-primary);
+        font-family: "Poppins", Sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    .title {
+        color: var(--color-secondary);
+        font-family: "Poppins", Sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 34px;
+        padding-bottom: 10px;
     }
 }
