@@ -6132,6 +6132,12 @@ footer .footer-follow img {
   padding: 15px;
   background-color: rgba(240, 240, 240, 0.5411764706);
 }
+@media (max-width: 767px) {
+  .karsilastirma-table th {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
 .karsilastirma-table th:first-child {
   background-color: rgb(240, 240, 240);
   position: -webkit-sticky;
@@ -6147,6 +6153,12 @@ footer .footer-follow img {
   border-color: #eeeeee;
   padding: 18px 0px 18px 15px;
   line-height: 24px;
+}
+@media (max-width: 767px) {
+  .karsilastirma-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
 .karsilastirma-table td:first-child {
   background-color: rgb(240, 240, 240);
@@ -6165,6 +6177,23 @@ footer .footer-follow img {
   }
 }
 
+.nice-select {
+  width: 200px;
+}
+
+.nice-select .list {
+  width: 200px;
+}
+
+@media (max-width: 767px) {
+  .nice-select {
+    width: auto;
+    padding: 0 4px;
+  }
+  .nice-select .list {
+    width: auto;
+  }
+}
 .calculate-price .form-control {
   width: 100%;
   margin-bottom: 14px;

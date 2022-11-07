@@ -11,6 +11,10 @@
         border-color: #eeeeee;
         padding: 15px;
         background-color: #f0f0f08a;
+        @include media-down("md") {
+            font-size: 14px;
+            padding: 8px;
+        }
         &:first-child {
             background-color: rgba(240, 240, 240, 1);
             position: sticky;
@@ -26,6 +30,10 @@
         border-color: #eeeeee;
         padding: 18px 0px 18px 15px;
         line-height: 24px;
+        @include media-down("md") {
+            font-size: 14px;
+            padding: 8px;
+        }
         &:first-child {
             background-color: rgba(240, 240, 240, 1);
             position: sticky;
@@ -39,5 +47,23 @@
     }
     @include media-down("lg") {
         overflow: auto;
+    }
+}
+
+.nice-select {
+    width: 200px;
+}
+
+.nice-select .list {
+    width: 200px;
+}
+@include media-down("md") {
+    .nice-select {
+        width: auto;
+        padding: 0 4px;
+    }
+
+    .nice-select .list {
+        width: auto;
     }
 }
