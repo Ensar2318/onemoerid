@@ -6871,11 +6871,26 @@ footer .footer-follow img {
   background: #f2f6f9;
   position: relative;
 }
+@media (max-width: 991px) {
+  .calculate-v2-card {
+    padding: 20px;
+  }
+}
 .calculate-v2-card .title {
   font-family: muller, arial;
   font-size: 46px;
   font-weight: 700;
   line-height: 1.3em;
+}
+@media (max-width: 991px) {
+  .calculate-v2-card .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .calculate-v2-card .custom-r-wrap {
+    width: 100%;
+  }
 }
 .calculate-v2-card .custom-r-wrap input {
   display: none;
@@ -6897,6 +6912,17 @@ footer .footer-follow img {
   border: 1px solid #e5e7eb;
   font-weight: normal !important;
   transition: 0.5s;
+}
+@media (max-width: 991px) {
+  .calculate-v2-card .radio-custom {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .calculate-v2-card .radio-custom {
+    min-height: 40px;
+    width: 100%;
+  }
 }
 .calculate-v2-card .radio-custom:hover {
   background-color: var(--color-primary);

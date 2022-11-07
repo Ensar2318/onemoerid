@@ -309,13 +309,22 @@
     padding: 70px 70px 70px 70px;
     background: #f2f6f9;
     position: relative;
+    @include media-down("lg") {
+        padding: 20px;
+    }
     .title {
         font-family: muller, arial;
         font-size: 46px;
         font-weight: 700;
         line-height: 1.3em;
+        @include media-down("lg") {
+            font-size: 30px;
+        }
     }
     .custom-r-wrap {
+        @include media-down("lg") {
+            width: 100%;
+        }
         input {
             display: none;
         }
@@ -325,6 +334,9 @@
         }
     }
     .radio-custom {
+        @include media-down("lg") {
+            width: 100%;
+        }
         cursor: pointer;
         min-height: 55px;
         display: flex;
@@ -337,6 +349,10 @@
         border: 1px solid #e5e7eb;
         font-weight: normal !important;
         transition: 0.5s;
+        @include media-down("lg") {
+            min-height: 40px;
+            width: 100%;
+        }
         &:hover {
             background-color: var(--color-primary);
             color: white;
