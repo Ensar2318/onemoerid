@@ -7614,7 +7614,8 @@ footer .footer-follow img {
 }
 
 .swiper-real-estate {
-  height: 700px;
+  margin-top: 114px;
+  height: 350px;
 }
 .swiper-real-estate .swiper-pagination {
   display: flex;
