@@ -77,6 +77,7 @@ table {
 html,
 body {
   font-family: "muller", sans-serif;
+  font-size: 14px;
 }
 
 /* Text Colors */
@@ -7019,7 +7020,7 @@ footer .footer-follow img {
 .blog-content-wrap {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 28px;
   color: #333333;
 }
