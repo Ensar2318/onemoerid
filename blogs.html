@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="assets/vendor/swipperjs/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/vendor/icomoon/style.css">
     <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/vendor/niceSelect/nice-select.css">
+
     <!-- Main Css Files -->
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -130,50 +132,180 @@
         </div>
     </section>
     <!-- hero section end-->
+    <section>
+        <div class="container-special">
+            <h1 class="fs-lg-70 fs-xs-36 pb-lg-30 pb-xs-20 pt-xs-20">Blog</h1>
+            <form class="form-wrap mb-3">
+                <button><i class="icon-search"></i></button>
+                <input type="text">
+            </form>
+            <div class="d-flex">
+                <select class="select-custom">
+                    <option value="" readonly selected>Ülke Seçiniz</option>
+                    <option value="turkye">Türkiye</option>
+                </select>
+            </div>
+            <div class="blog-buttons-2 w-100 pt-4">
+                <a class="active" href="experiences.html">Bütün Bloglar</a>
+                <a class="" href="experiences-malta.html">Malta</a>
+                <a href="">Caribbean</a>
+                <a href="">Portugal</a>
+                <a href="">Portugal</a>
+                <a href="">Portugal</a>
+                <a href="">Portugal</a>
+                <a href="">Portugal</a>
+                <a href="">Portugal</a>
+                <a href="">Austrioa</a>
+                <a href="">Cyprus</a>
+                <a href="">Hungary</a>
+            </div>
 
-    <section class="blogs">
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <a href="blog-detail.html" class="blog-card"
-                        style="background-image: url('assets/img/layered-carousel/1.jpg');">
+            <div class="row mt-5 gy-4 pb-4">
+                <div class="col-lg-6">
+                    <a class="blog-big-img" href="blog-detail.html">
+                        <div class="image-scaler">
+                            <img src="assets/img/counter-iimg.jpg" alt="image">
+                        </div>
                         <div class="content">
-                            <div class="badge">Blog</div>
-                            <p>Portekiz Vatandaşlığı Nasıl Alınır? |Bilinmesi Gerekenler</p>
+                            <h2 class="title">Portugal D2 Visa: how to get a residence permit for entrepreneurs</h2>
+                            <span class="badge">Second citizenship</span>
                         </div>
                     </a>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <a href="blog-detail.html" class="blog-card"
-                        style="background-image: url('assets/img/layered-carousel/1.jpg');">
+                <div class="col-lg-6">
+                    <a href="blog-detail.html" class="smaller-blog">
                         <div class="content">
-                            <div class="badge">Blog</div>
-                            <p>Portekiz Vatandaşlığı Nasıl Alınır? |Bilinmesi Gerekenler</p>
+                            <h5 class="sub-title">Second cizisenship</h5>
+                            <h2 class="title">How to choose a Turkish bank and open an account</h2>
                         </div>
+                        <img src="assets/img/cta-bg.jpg" alt="blog-image">
                     </a>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <a href="blog-detail.html" class="blog-card"
-                        style="background-image: url('assets/img/layered-carousel/1.jpg');">
+                    <a href="blog-detail.html" class="smaller-blog">
                         <div class="content">
-                            <div class="badge">Blog</div>
-                            <p>Portekiz Vatandaşlığı Nasıl Alınır? |Bilinmesi Gerekenler</p>
+                            <h5 class="sub-title">Second cizisenship</h5>
+                            <h2 class="title">How to choose a Turkish bank and open an account</h2>
                         </div>
+                        <img src="assets/img/cta-bg.jpg" alt="blog-image">
                     </a>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <a href="blog-detail.html" class="blog-card"
-                        style="background-image: url('assets/img/layered-carousel/1.jpg');">
+                    <a href="blog-detail.html" class="smaller-blog">
                         <div class="content">
-                            <div class="badge">Blog</div>
-                            <p>Portekiz Vatandaşlığı Nasıl Alınır? |Bilinmesi Gerekenler</p>
+                            <h5 class="sub-title">Second cizisenship</h5>
+                            <h2 class="title">How to choose a Turkish bank and open an account</h2>
                         </div>
+                        <img src="assets/img/cta-bg.jpg" alt="blog-image">
+                    </a>
+                    <a href="blog-detail.html" class="smaller-blog">
+                        <div class="content">
+                            <h5 class="sub-title">Second cizisenship</h5>
+                            <h2 class="title">How to choose a Turkish bank and open an account</h2>
+                        </div>
+                        <img src="assets/img/cta-bg.jpg" alt="blog-image">
                     </a>
                 </div>
             </div>
+
+            <div class="swiper blog-swiper-1" data-swiper-init data-swiper-loop
+                data-swiper-breakpoints='[[0,1,20],[768,2,20],[1024,3,20]]'
+                data-swiper-pagination='{"el":".swiper-pagination","clickable":true}'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="blog-detail.html" class="blog-card-swiper-card">
+                            <div class="img-scaler">
+                                <img src="assets/img/golden-about.jpg" alt="blog-img">
+                            </div>
+                            <div class="content">
+                                <h2 class="title">Portugal Startup Visa: how to get residency by opening an innovative
+                                    company
+                                </h2>
+                                <h6 class="subtitle">Second cizient</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="blog-detail.html" class="blog-card-swiper-card">
+                            <div class="img-scaler">
+                                <img src="assets/img/golden-about.jpg" alt="blog-img">
+                            </div>
+                            <div class="content">
+                                <h2 class="title">Portugal Startup Visa: how to get residency by opening an innovative
+                                    company
+                                </h2>
+                                <h6 class="subtitle">Second cizient</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="blog-detail.html" class="blog-card-swiper-card">
+                            <div class="img-scaler">
+                                <img src="assets/img/golden-about.jpg" alt="blog-img">
+                            </div>
+                            <div class="content">
+                                <h2 class="title">Portugal Startup Visa: how to get residency by opening an innovative
+                                    company
+                                </h2>
+                                <h6 class="subtitle">Second cizient</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+            <div class="d-flex justify-content-between pb-xs-30 pt-lg-80 pt-xs-40 align-items-center">
+                <h1 class="fs-lg-42 fs-xs-24 pb-lg-40 pb-xs-20 pt-xs-20">Cases</h1>
+                <a class="btn-secondary" href="experiences.html">Show All</a>
+            </div>
+
+            <div class="swiper blog-swiper-1" data-swiper-init data-swiper-loop
+                data-swiper-breakpoints='[[0,1,20],[768,2,20],[1024,3,20]]'
+                data-swiper-pagination='{"el":".swiper-pagination","clickable":true}'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="blog-detail.html" class="blog-card-swiper-card">
+                            <div class="img-scaler">
+                                <img src="assets/img/golden-about.jpg" alt="blog-img">
+                            </div>
+                            <div class="content">
+                                <h2 class="title">Portugal Startup Visa: how to get residency by opening an innovative
+                                    company
+                                </h2>
+                                <h6 class="subtitle">Second cizient</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="blog-detail.html" class="blog-card-swiper-card">
+                            <div class="img-scaler">
+                                <img src="assets/img/golden-about.jpg" alt="blog-img">
+                            </div>
+                            <div class="content">
+                                <h2 class="title">Portugal Startup Visa: how to get residency by opening an innovative
+                                    company
+                                </h2>
+                                <h6 class="subtitle">Second cizient</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="blog-detail.html" class="blog-card-swiper-card">
+                            <div class="img-scaler">
+                                <img src="assets/img/golden-about.jpg" alt="blog-img">
+                            </div>
+                            <div class="content">
+                                <h2 class="title">Portugal Startup Visa: how to get residency by opening an innovative
+                                    company
+                                </h2>
+                                <h6 class="subtitle">Second cizient</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
         </div>
     </section>
-
 
     <footer>
         <div class="container">
@@ -242,56 +374,6 @@
     </footer>
 
 
-    <!-- =========== Hero Side =========== -->
-
-    <!-- <div class="swiper swiperTests" data-swiper-init data-swiper-loop data-swiper-centered
-        data-swiper-breakpoints='[[768,3,50],[1024,3,40]]'
-        data-swiper-pagination='{"el":".swiper-pagination","clickable":true}' data-swiper-next=".next"
-        data-swiper-prev=".prev">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class=" box">sadsad</div>
-            </div>
-            <div class="swiper-slide">
-                <div class=" box">sadsad</div>
-            </div>
-            <div class="swiper-slide">
-                <div class=" box">sadsad</div>
-            </div>
-            <div class="swiper-slide">
-                <div class=" box">sadsad</div>
-            </div>
-            <div class="swiper-slide">
-                <div class=" box">sadsad</div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div>
-            <span class="bg-primary prev">qwewqe</span>
-            <span class="bg-primary next">qwewqe</span>
-        </div>
-    </div> -->
-    <!-- Hero Side END -->
-
-    <!-- ===========   =========== -->
-
-    <!-- END -->
-
-
-
-
-    <!-- =========== Footer Side  =========== -->
-    <div id="footer"></div>
-    <!-- Footer Side END -->
-
-
-
-
-
-
-
-
-
 
     <!-- Vendor Js Files File-->
     <script src="assets/vendor/jquerry/jquery-3.6.0.min.js"></script>
@@ -302,7 +384,13 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/globalSwiper.js"></script>
     <script src="https://kit.fontawesome.com/7127399b23.js" crossorigin="anonymous"></script>
+    <script src="assets/vendor/niceSelect/jquery.nice-select.min.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            $('.select-custom').niceSelect();
+        });
+    </script>
 
 </body>
 
