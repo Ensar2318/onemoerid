@@ -7018,10 +7018,10 @@ footer .footer-follow img {
 }
 
 .blog-content-wrap {
-  font-family: "Montserrat", sans-serif;
+  font-family: muller;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
+  font-size: 24px;
+  line-height: 36px;
   color: #333333;
 }
 .blog-content-wrap p {
@@ -7104,7 +7104,7 @@ footer .footer-follow img {
 }
 .experience-detail-wrap .sub-title-desc::before {
   content: "«";
-  font-family: "montserrat";
+  font-family: muller;
   font-size: 60px;
   line-height: 1em;
   font-weight: 700;
@@ -7131,7 +7131,7 @@ footer .footer-follow img {
   padding-top: 40px;
 }
 .experience-detail-wrap .content p {
-  font-family: "Montserrat", sans-serif;
+  font-family: muller;
   padding-bottom: 20px;
   font-size: 20px;
   line-height: 30px;
@@ -7188,7 +7188,7 @@ footer .footer-follow img {
   padding: 10px 0;
 }
 .real-estate-card .content .price {
-  font-family: "Montserrat", sans-serif;
+  font-family: muller;
   font-size: 14px;
 }
 .real-estate-card .content .price b {
