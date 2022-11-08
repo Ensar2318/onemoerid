@@ -17,6 +17,7 @@
 
 
     <!-- Vendor  Css files -->
+    <link rel="stylesheet" href="assets/vendor/niceSelect/nice-select.css">
     <link rel="stylesheet" href="assets/vendor/bootstrap-5.1.3/css/bootstrap-grid.css">
     <link rel="stylesheet" href="assets/vendor/swipperjs/swiper-bundle.min.css">
 
@@ -32,7 +33,7 @@
     <div id="header" class="header-main">
         <div class="container-fluid">
             <a href="index.html" class="logo">
-                <img src="assets/img/logo.png" alt="logo">
+                <img src="assets/img/logo.png" alt="logo" width="190" height="40">
             </a>
             <nav class="main-menu">
                 <ul>
@@ -81,7 +82,7 @@
     <div class="mobile-menu-wrapper">
         <div class="mobile-menu__header">
             <a href="index.html" class="logo">
-                <img src="assets/img/logo.png" alt="logo">
+                <img src="assets/img/logo.png" alt="logo" width="190" height="40">
             </a>
             <a href="javascript:;" aria-label="close menu" class="close-menu">
                 <i class="fas fa-times"></i>
@@ -325,7 +326,7 @@
                             </div>
                             <div class="row gy-4 mb-4">
                                 <div class="col-lg-4">
-                                    <label class="pb-3 d-block" for="">Spouse</label>
+                                    <label class="pb-3 d-block" for="choice1">Spouse</label>
                                     <div class="d-flex">
                                         <div class="custom-r-wrap">
                                             <input name="input_6" type="radio" value="true" id="choice1">
@@ -420,8 +421,8 @@
                                 <input class="cs-vs-2" type="text" value="">
                             </div>
                             <div>
-                                <input type="checkbox" id="showselect">
-                                <label for="showselect">I acknowledge that this program requires a minimum investment of
+                                <input type="checkbox" id="checkbox-3">
+                                <label for="checkbox-3">I acknowledge that this program requires a minimum investment of
                                     €690,000</label>
                             </div>
                             <div id="showselect2" class="pt-4" style="display: none;">
@@ -436,8 +437,8 @@
                                 </select>
                             </div>
                             <div class="pt-4">
-                                <input type="checkbox" id="showselect">
-                                <label for="showselect">I agree with terms and conditions of the Immigrant Invest
+                                <input type="checkbox" id="checkbox-2">
+                                <label for="checkbox-2">I agree with terms and conditions of the Immigrant Invest
                                     privacy policy. Learn more about how we process personal data here.</label>
                             </div>
 
@@ -483,7 +484,7 @@
                 <div class="col-lg-3">
                     <div class="footer-contnet">
                         <a class="logo" href="index.html">
-                            <img src="assets/img/footerlogo.png" alt="logo">
+                            <img src="assets/img/footerlogo.png" alt="portfolio" width="210" height="45">
                         </a>
                         <p>Yatırım yolu ile Avrupa Vatandaşlığı ve Golden Visa programlarında uzman OneMoreID ekibi ile
                             yola çıkın. </p>
@@ -544,57 +545,6 @@
     </footer>
 
 
-    <!-- =========== Hero Side =========== -->
-
-    <!-- <div class="swiper swiperTests" data-swiper-init data-swiper-loop data-swiper-centered
-        data-swiper-breakpoints='[[768,3,50],[1024,3,40]]'
-        data-swiper-pagination='{"el":".swiper-pagination","clickable":true}' data-swiper-next=".next"
-        data-swiper-prev=".prev">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class=" box">sadsad</div>
-            </div>
-            <div class="swiper-slide">
-                <div class=" box">sadsad</div>
-            </div>
-            <div class="swiper-slide">
-                <div class=" box">sadsad</div>
-            </div>
-            <div class="swiper-slide">
-                <div class=" box">sadsad</div>
-            </div>
-            <div class="swiper-slide">
-                <div class=" box">sadsad</div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div>
-            <span class="bg-primary prev">qwewqe</span>
-            <span class="bg-primary next">qwewqe</span>
-        </div>
-    </div> -->
-    <!-- Hero Side END -->
-
-    <!-- ===========   =========== -->
-
-    <!-- END -->
-
-
-
-
-    <!-- =========== Footer Side  =========== -->
-    <div id="footer"></div>
-    <!-- Footer Side END -->
-
-
-
-
-
-
-
-
-
-
     <!-- Vendor Js Files File-->
     <script src="assets/vendor/jquerry/jquery-3.6.0.min.js"></script>
     <script src="assets/vendor/swipperjs/swiper-bundle.min.js"></script>
@@ -604,7 +554,46 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/globalSwiper.js"></script>
     <script src="https://kit.fontawesome.com/7127399b23.js" crossorigin="anonymous"></script>
+    <script src="assets/vendor/niceSelect/jquery.nice-select.min.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            $(".nice-select").niceSelect();
+            $("[name=input_4]").change(function (e) {
+                e.preventDefault();
+                const value = $(this).val();
+                console.log(value)
+                if (value == "true") {
+                    $("#isChildren").show();
+                } else {
+                    $("#isChildren").hide();
+                }
+            });
+
+            $("[name=input_7]").change(function (e) {
+                e.preventDefault();
+                const value = $(this).val();
+                console.log(value)
+                if (value == "true") {
+                    $("#single-select").show();
+                } else {
+                    $("#single-select").hide();
+                }
+            });
+            $("#checkbox-3").change(function (e) {
+                e.preventDefault();
+                const value = $(this).prop("checked");
+                if (value) {
+                    $("#showselect2").show();
+                } else {
+                    $("#showselect2").hide();
+
+                }
+            });
+
+
+        });
+    </script>
 
 </body>
 

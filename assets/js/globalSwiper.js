@@ -31,32 +31,3 @@ document.querySelectorAll("[data-swiper-init]").forEach(elSwiper => {
         },
     });
 });
-
-
-{/* <div class="swiper swiperTests" data-swiper-init data-swiper-loop data-swiper-centered
-data-swiper-breakpoints='[[768,3,50],[1024,3,40]]'
-data-swiper-pagination='{"el":".swiper-pagination","clickable":true}' data-swiper-next=".next"
-data-swiper-prev=".prev">
-<div class="swiper-wrapper">
-    <div class="swiper-slide">
-        <div class=" box">sadsad</div>
-    </div>
-    <div class="swiper-slide">
-        <div class=" box">sadsad</div>
-    </div>
-    <div class="swiper-slide">
-        <div class=" box">sadsad</div>
-    </div>
-    <div class="swiper-slide">
-        <div class=" box">sadsad</div>
-    </div>
-    <div class="swiper-slide">
-        <div class=" box">sadsad</div>
-    </div>
-</div>
-<div class="swiper-pagination"></div>
-<div>
-    <span class="bg-primary prev">qwewqe</span>
-    <span class="bg-primary next">qwewqe</span>
-</div>
-</div> */}
