@@ -207,6 +207,15 @@
 .smaller-blog {
     display: flex;
     border-bottom: solid 1px #e5e5e5;
+    @include media-down("lg") {
+        gap: 20px;
+        img {
+            order: 0;
+        }
+        .content {
+            order: 1;
+        }
+    }
     &:not(last-child) {
         margin-bottom: 20px;
     }
@@ -220,11 +229,18 @@
         font-weight: 700;
         color: var(--color-secondary);
         padding-bottom: 30px;
+        @include media-down("lg") {
+            padding-bottom: 10px;
+            font-size: 16px;
+        }
     }
     .title {
         font-size: 21px;
         font-weight: 700;
         line-height: 25px;
+        @include media-down("lg") {
+            font-size: 18px;
+        }
     }
 }
 
