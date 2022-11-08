@@ -5819,7 +5819,7 @@ footer .footer-follow img {
 }
 .section-heading__description {
   font-size: 20px;
-  line-height: 27px;
+  line-height: 30px;
   font-weight: 400;
   color: var(--color-body);
 }
@@ -6675,14 +6675,14 @@ footer .footer-follow img {
   padding-bottom: 30px;
   color: #04344c;
   font-family: "Poppins", Sans-serif;
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 600;
 }
 .avantaj-crd p {
-  font-size: 14px;
+  font-size: 20px;
   color: #1d1c1c;
   padding-bottom: 10px;
-  line-height: 20px;
+  line-height: 25px;
 }
 .avantaj-crd .link {
   display: flex;
