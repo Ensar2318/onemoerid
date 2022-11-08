@@ -7441,8 +7441,6 @@ footer .footer-follow img {
 }
 .experience-detail-wrap .content h1 {
   font-size: 24px;
-  padding-top: 60px;
-  padding-bottom: 20px;
 }
 
 .experience-detail-wrapv2 h1 {
@@ -7660,7 +7658,7 @@ footer .footer-follow img {
   gap: 10px;
 }
 .settings .filter-wrap > li .content .filter-items label span {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .swiper-real-estate {
@@ -7709,12 +7707,12 @@ footer .footer-follow img {
   margin-bottom: 30px;
 }
 .real-estate-detail-content .head .addres {
-  font-size: 14px;
+  font-size: 20px;
   color: #7a7a7a;
   margin-bottom: 10px;
 }
 .real-estate-detail-content .head .stars {
-  font-size: 14px;
+  font-size: 20px;
 }
 @media (min-width: 992px) {
   .real-estate-detail-content .types-wrap {
@@ -7744,11 +7742,11 @@ footer .footer-follow img {
 }
 .real-estate-detail-content .types-wrap .type-card .type {
   color: #c4c4c4;
-  font-size: 16px;
+  font-size: 20px;
 }
 .real-estate-detail-content .types-wrap .type-card .name {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   color: #3b4249;
 }
 .real-estate-detail-content .about {
@@ -7759,13 +7757,13 @@ footer .footer-follow img {
   padding-bottom: 20px;
 }
 .real-estate-detail-content .about .desc {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 22px;
   color: #7a7a7a;
   padding-bottom: 60px;
 }
 .real-estate-detail-content .about .subtitle {
-  font-size: 16px;
+  font-size: 20px;
   padding-bottom: 30px;
   border-bottom: dotted 1px #dfdfdf;
   font-weight: 600;
@@ -7778,7 +7776,7 @@ footer .footer-follow img {
   padding-top: 20px;
 }
 .real-estate-detail-content .about .list-details .item li {
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 16px;
 }
 .real-estate-detail-content .about .list-details .item li::before {
