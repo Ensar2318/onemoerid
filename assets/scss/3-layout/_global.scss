@@ -4,3 +4,43 @@ section {
         padding: 50px 0;
     }
 }
+
+.bize-danisin-1 {
+    height: 500px;
+    border-radius: 100px;
+    background-image: url("../../assets/img/cta-bg.jpg");
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: end;
+    justify-content: center;
+    @include media-down("lg") {
+        height: 300px;
+    }
+    img {
+        width: 80%;
+        @include media-down("lg") {
+            width: 65%;
+        }
+    }
+}
+
+.bize-danisin-2 {
+    height: 500px;
+    border-radius: 100px;
+    background-image: url(../../assets/img/blog-detail.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    @include media-down("lg") {
+        height: 300px;
+    }
+    img {
+        width: 80%;
+        @include media-down("lg") {
+            width: 65%;
+        }
+    }
+}

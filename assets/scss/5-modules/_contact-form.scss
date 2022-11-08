@@ -1,6 +1,9 @@
 .forms-card {
     background-color: white;
     padding: 50px;
+    @include media-down("md") {
+        padding: 20px;
+    }
     .form-control {
         width: 100%;
         margin-bottom: 14px;

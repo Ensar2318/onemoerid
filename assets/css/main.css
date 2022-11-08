@@ -5247,6 +5247,54 @@ section {
   }
 }
 
+.bize-danisin-1 {
+  height: 500px;
+  border-radius: 100px;
+  background-image: url("../../assets/img/cta-bg.jpg");
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: end;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .bize-danisin-1 {
+    height: 300px;
+  }
+}
+.bize-danisin-1 img {
+  width: 80%;
+}
+@media (max-width: 991px) {
+  .bize-danisin-1 img {
+    width: 65%;
+  }
+}
+
+.bize-danisin-2 {
+  height: 500px;
+  border-radius: 100px;
+  background-image: url(../../assets/img/blog-detail.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .bize-danisin-2 {
+    height: 300px;
+  }
+}
+.bize-danisin-2 img {
+  width: 80%;
+}
+@media (max-width: 991px) {
+  .bize-danisin-2 img {
+    width: 65%;
+  }
+}
+
 .header-main {
   height: 114px;
   display: flex;
@@ -6030,6 +6078,11 @@ footer .footer-follow img {
 .forms-card {
   background-color: white;
   padding: 50px;
+}
+@media (max-width: 767px) {
+  .forms-card {
+    padding: 20px;
+  }
 }
 .forms-card .form-control {
   width: 100%;
@@ -6961,6 +7014,7 @@ footer .footer-follow img {
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  flex-wrap: wrap;
 }
 .blog-buttons a {
   min-height: 50px;
@@ -7082,6 +7136,11 @@ footer .footer-follow img {
   line-height: 1.2em !important;
   font-weight: bold;
   margin: 20px 0 35px;
+}
+@media (max-width: 767px) {
+  .experience-detail-wrap h1 {
+    font-size: 30px;
+  }
 }
 .experience-detail-wrap h5 {
   font-size: 16px;
